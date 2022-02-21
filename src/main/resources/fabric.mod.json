@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "fun_mod",
+  "version": "${version}",
+  "name": "Fun_mod",
+  "description": "A Fun Mod",
+  "authors": [
+    "EmeraldGltch"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/fun_mod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "funmod.fun_mod.client.Fun_modClient"
+    ],
+    "main": [
+      "funmod.fun_mod.Fun_mod"
+    ]
+  },
+  "mixins": [
+    "fun_mod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.16.5"
+  }
+}
